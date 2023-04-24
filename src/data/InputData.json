@@ -1,0 +1,97 @@
+[
+    {
+        "id": "input1",
+        "className": "w-full",
+        "label": "Company Name",
+        "variant": "outlined"
+    },
+    {
+        "id": "input2",
+        "className": "w-full",
+        "label": "Website URL",
+        "variant": "outlined",
+        "helperText": "Assistive text"
+    },
+    {
+        "id": "input3",
+        "className": "w-full",
+        "label": "Company Name",
+        "variant": "outlined",
+        "defaultValue": "No of Employees"
+    },
+    {
+        "id": "input4",
+        "className": "w-full",
+        "label": "Company Name",
+        "variant": "outlined",
+        "defaultValue": "Industry",
+        "helperText": "Assistive text"
+    },
+    {
+        "id": "input5",
+        "className": "w-full",
+        "label": "Label",
+        "variant": "outlined",
+        "defaultValue":"Account Manager Name"
+    },
+    {
+        "id": "input6",
+        "className": "w-full",
+        "label": "Company Name",
+        "variant": "outlined",
+        "defaultValue":"Account Manager Name",
+        "helperText": "Assistive text"
+    },
+    {
+        "id": "input7",
+        "className": "w-full input-margin",
+        "label": "Input Text 1",
+        "variant": "outlined"
+    },
+    {
+        "id": "input8",
+        "className": "w-full input-margin",
+        "label": "Input Text 2 ",
+        "variant": "outlined",
+        "helperText": "Assistive text"
+    },
+    {
+        "id": "input9",
+        "className": "w-full",
+        "label": "Input Text 3",
+        "variant": "outlined"
+    },
+    {
+        "id": "input10",
+        "className": "w-full",
+        "label": "Input Text 4",
+        "variant": "outlined",
+        "helperText": "Assistive text"
+    },
+    {
+        "id": "input11",
+        "className": "w-full",
+        "label": "Input Text 5",
+        "variant": "outlined"
+    },
+    {
+        "id": "input12",
+        "className": "w-full",
+        "label": "Input Text 6",
+        "variant": "outlined",
+        "helperText": "Assistive text"
+    },
+    {
+        "id": "input13",
+        "className": "w-full input-margin",
+        "label": "Input Text 7",
+        "variant": "outlined"
+    },
+    {
+        "id": "input14",
+        "className": "w-full input-margin",
+        "label": "Input Text 8 ",
+        "variant": "outlined",
+        "helperText": "Assistive text"
+    }
+]
