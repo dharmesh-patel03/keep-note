@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import AddIcon from '@mui/icons-material/Add';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useDispatch } from 'react-redux';
+import { addNote } from '../actions';
 
-const CreateNote = ({ handleNotes }) => {
+const CreateNote = () => {
+    const dispatch = useDispatch();
+
     const [note, setNote] = useState({
         title: "",
         contents: ""
@@ -19,22 +23,6 @@ const CreateNote = ({ handleNotes }) => {
         })
     }
 
-    const handleAdd = (e) => {
-        if (!note.title || !note.contents) {
-            toast.error('Please add any input !!!', {
-                position: toast.POSITION.TOP_CENTER,
-                className: 'toast-message'
-            });
-        }
-        else {
-
-            handleNotes(note)
-            setNote({
-                title: "",
-                contents: ""
-            })
-        }
-    }
     return (
 
         <div className="container flex justify-center">
@@ -61,7 +49,22 @@ const CreateNote = ({ handleNotes }) => {
                     ></textarea>
                 </div>
                 <div className='wrap'>
-                    <div className='button p-2 flex w-10 rounded-full shadow cursor-pointer hover:bg-red-200 ml-auto mr-4 mb-4' onClick={handleAdd}>
+                    <div className='button p-2 flex w-10 rounded-full shadow cursor-pointer hover:bg-red-200 ml-auto mr-4 mb-4' onClick={() =>
+                    {
+                        if (!note.title || !note.contents) {
+                            toast.error('Please add something !!!', {
+                                position: toast.POSITION.TOP_CENTER
+                            });
+                        }
+                        else {
+                            dispatch(addNote(note))
+                            setNote({
+                                title: "",
+                                contents:""
+                            })
+                        }
+                    }
+                    }>
                         <AddIcon />
                     </div>
                     <ToastContainer />
